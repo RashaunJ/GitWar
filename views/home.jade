@@ -1,0 +1,98 @@
+doctype html
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+script(src='https://docs.google.com/uc?export=download&id=0B5gXAQnDsTa0NDQ4TEsxelJTZTg')
+
+link(rel = 'stylesheet', href = '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='#') GitWars
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='#') Dashboard
+        li
+          a(href='#') Settings
+        li
+          a(href='#') Profile
+        li
+          a(href='#') Help
+      form.navbar-form.navbar-right
+        input.form-control(type='text', placeholder='Search...')
+
+.container-fluid
+  .row
+    .col-sm-3.col-md-2.sidebar
+      ul.nav.nav-sidebar
+        li.active
+          a(href='#')
+            | Overview
+            span.sr-only (current)
+        li
+          a(href='#') Home
+        li
+          a(href='#') Powerups
+        li
+          a(href='#') Settings
+
+    .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+      h1.page-header Dashboard
+      .row.placeholders
+        .col-xs-6.col-sm-3.placeholder
+         #getting-started
+          h4 Label
+          span.text-muted Something else
+        .col-xs-6.col-sm-3.placeholder
+          img(src='https://gravatar.com/avatar/acbf062aa6a1be591f1a8aaa1c5e8504?s=200', alt='Generic placeholder thumbnail')
+          h4 Gravatar ID
+          span.text-muted Show off!
+        .col-xs-6.col-sm-3.placeholder
+          h4 Last Action  
+          span.text-muted null
+        .col-xs-6.col-sm-3.placeholder
+          img.img-responsive(data-src='', alt='')
+          h4 Label
+          span.text-muted Something else
+      h2.sub-header Leaderboard
+      .table-responsive
+        table.table.table-striped
+          thead
+            tr
+              th #
+              th User
+              th Full Name
+              th Time Alive
+              th Points
+          tbody
+            tr
+              td 01
+              td RaShaunJ
+              td RaShaun Jones
+              td 1:07
+              td 200
+            tr
+              td 02
+              td RaShaunJ
+              td RaShaun Jones
+              td null
+              td 0
+
+
+
+
+script(type='text/javascript').
+  $('#getting-started').countdown('2015/01/01', function(event) {
+    $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+  });
+
+//
+   Bootstrap core JavaScript
+      ================================================== 
+// Placed at the end of the document so the pages load faster
+script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+

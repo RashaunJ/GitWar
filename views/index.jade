@@ -1,0 +1,37 @@
+doctype html
+// Navigation
+link(rel = 'stylesheet', href = '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+link(rel='stylesheet', href='https://docs.google.com/uc?export=download&id=0B5gXAQnDsTa0WGEydXJUdTVzVXM')
+nav.navbar.navbar-inverse.navbar-fixed-bottom(role='navigation')
+  .container
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='#') GitWars
+    // Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li
+          a(href='/login') Login
+        li
+          a(href='/home') Dashboard
+    // /.navbar-collapse
+  // /.container
+// Page Content
+.container
+  .row
+    .col-md-6.col-sm-12
+      h1 Git Wars
+      p
+        | Code for your life! Instantly track your activity on Github, earn points and try to stay alive.
+  // /.row
+// /.container
+// jQuery
+
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+
